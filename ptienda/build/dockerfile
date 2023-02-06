@@ -1,0 +1,10 @@
+FROM nginx
+
+#Copiando el directorio app-nest al directorio de publicacion de nginx
+COPY ../app-next /usr/share/nginx/html
+
+# WORKDIR  /proyectos/ptienda/build
+# RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+# COPY conf/nginx.conf /etc/nginx
+RUN /etc/init.d/nginx start
