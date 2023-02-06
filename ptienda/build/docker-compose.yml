@@ -1,13 +1,12 @@
-version: '3'
+version: '3' 
 services:
-  web:
-    build:
-      context: ${DIR_DFLIES}
-      dockerfile: ./Dokerfile
-    env_file:
-      -./.env
-    ports:
+  web: 
+    build: 
+      context: ${DIR_DFILES}
+      dockerfile: ./dockerfile
+    env_file: 
+      - ./.env
+    ports: 
       - ${PUERTO}:80
-    # volumenes:
-    #   - ../app_next/usr/share/nginx/html
-    
+    # volumes: 
+    #   - ../app_next:/usr/share/nginx/html
