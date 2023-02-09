@@ -10,5 +10,5 @@
 
 echo "Desplegando la app de ptienda"
 
-docker-compose -f ./ptienda/bulid/docker-compose.yml build
-docker-compose -f ./ptienda/build/docker-compose.yml up -d
+docker-compose -f ptienda/bulid/docker-compose.yml build
+docker-compose -f ptienda/build/docker-compose.yml up -d
