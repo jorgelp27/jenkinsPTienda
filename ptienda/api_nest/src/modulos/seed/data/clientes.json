@@ -1,0 +1,27 @@
+[
+    {
+        "dni":"12568596F",
+        "nombre": "pepe",
+        "ciudad": "Almeria",
+        "telefono": 663311459
+    },
+    {
+        "dni":"78543596F",
+        "nombre": "Eusebio",
+        "ciudad": "Granada",
+        "telefono": 659678159
+    },
+
+    {
+        "dni":"12528596F",
+        "nombre": "Jose",
+        "ciudad": "Murcia",
+        "telefono": 667845934
+    },
+    {
+        "dni":"23328597k",
+        "nombre": "Eva",
+        "ciudad": "Barcelona",
+        "telefono": 647844534
+    }
+]

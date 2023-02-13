@@ -1,0 +1,25 @@
+[
+
+    {
+        "id": "45pg",
+        "dni": "56634589F",
+        "nombre": "Diego",
+        "email": "diego@gmail.com",
+        "telefono": 689645123
+    },
+    {
+        "id": "18bn",
+        "dni": "43634596k",
+        "nombre": "Gines",
+        "email": "gines@gmail.com",
+        "telefono": 659625145
+    },
+
+    {
+        "id": "23hu",
+        "dni": "16634585k",
+        "nombre": "Lola",
+        "email": "loal@gmail.com",
+        "telefono": 656682145
+    }
+]

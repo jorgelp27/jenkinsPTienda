@@ -1,0 +1,61 @@
+[
+    {
+        "id": "527f",
+        "modelo": "Asus TUF",
+        "precio": 400,
+        "fabricante": "hp",
+        "imagen": "https://img.pccomponentes.com/articles/1065/10658853/1442-asus-tuf-gaming-f15-fx507zc4-hn002-intel-core-i7-12700h-16gb-512gb-ssd-rtx-3050-156.jpg?_gl=1*1ihdyzs*_ga*MzU2MTI3MTE0LjE2NzUzNjQyNDE.*_ga_DJ03PRJ8R3*MTY3NTM2NDI0MC4xLjEuMTY3NTM2NTk3NS4wLjAuMA..",
+        "descripcion": "El chasis TUF Gaming se ha rediseñado para 2022 y es un 4,5 % más pequeño que los modelos del año pasado. El logotipo de TUF también se ha reinventado, con versiones en relieve y esculpidas con láser",
+        "idCliente": "78543596F",
+        "idCategoria": "91er",
+        "idProveedor": "45pg"
+        
+    },
+
+    {
+        "id": "456h",
+        "modelo": "msi katana",
+        "precio": 900,
+        "fabricante": "msi",
+        "descripcion": "La nueva arquitectura NVIDIA Ampere ofrece el juego definitivo y presenta los núcleos avanzados de trazado de rayos de segunda generación y los Tensor Cores de tercera generación con un rendimiento superior.",
+        "imagen":"https://img.pccomponentes.com/articles/1064/10640709/1886-msi-katana-gf66-12uc-820xes-intel-core-i7-12650h-16gb-512gb-ssd-rtx3050-156.jpg?_gl=1*yua1bh*_ga*MzU2MTI3MTE0LjE2NzUzNjQyNDE.*_ga_DJ03PRJ8R3*MTY3NTM2NDI0MC4xLjEuMTY3NTM2NjAzMC4wLjAuMA..",
+        "idCliente": "12568596F",
+        "idCategoria": "91er",
+        "idProveedor": "18bn"
+    },
+    {
+        "id": "556h",
+        "modelo": "ASUS ROG Strix",
+        "precio": 1400,
+        "fabricante": "ASUS",
+        "descripcion": "DOMINIO ESPORTS. La CPU AMD Ryzen™ y la GPU para portátiles con TGP máximo de y MUX Switch forman la columna vertebral del flamante Strix G de 2022. La memoria DDR5 de última generación permite que la CPU ofrezca la mejor respuesta y la compatibilidad con unidades SSD PCIe® 4.0 evita que tengas que esperar a las transferencias de archivos o a que carguen los juegos.",
+        "imagen":"https://img.pccomponentes.com/articles/1031/10317957/1580-asus-rog-strix-g15-g513rm-hq012-amd-ryzen-9-6800h-16gb-1tb-ssd-rtx3060-156.jpg?_gl=1*1v02u3a*_ga*MzU2MTI3MTE0LjE2NzUzNjQyNDE.*_ga_DJ03PRJ8R3*MTY3NTM2ODg1MS4yLjEuMTY3NTM2ODg2MS4wLjAuMA..",
+        "idCliente": "23328597k",
+        "idCategoria": "91er",
+        "idProveedor": "18bn"
+    },
+
+    {
+        "id": "903k",
+        "modelo": "PcCom Silver ",
+        "precio": 910,
+        "fabricante": "PcCom",
+        "descripcion": "Entra en la nueva generación de procesadores Intel serie 11 con el nuevo PCCOM Silver. Su procesador Intel Core i5-11400F de 6 núcleos, 16 GB de RAM DDR4 y su nueva tarjeta gráfica GeForce RTX 3050 te ofrecerán toda la potencia necesaria para disfrutar de los últimos juegos del mercado con una tasa de frames superior a 60fps y a resolución 1080p.",
+        "imagen":"https://img.pccomponentes.com/articles/1004/10041764/1714-pccom-silver-intel-core-i5-11400f-16gb-500gb-ssd-rtx3050-comprar.jpg?_gl=1*l718aw*_ga*MzU2MTI3MTE0LjE2NzUzNjQyNDE.*_ga_DJ03PRJ8R3*MTY3NTM2ODg1MS4yLjEuMTY3NTM2OTQyNi4wLjAuMA..",
+        "idCliente": "12568596F",
+        "idCategoria": "78lp",
+        "idProveedor": "18bn"
+    },
+
+    {
+        "id": "803k",
+        "modelo": "PcCom Bronze ",
+        "precio": 890,
+        "fabricante": "PcCom",
+        "descripcion": "Entra en la nueva generación de procesadores Intel serie 11 con el nuevo PCCOM Bronze. Su procesador Intel Core i5-11400F de 6 núcleos, 16 GB de RAM DDR4 y su potente tarjeta gráfica GeForce GTX 1650 te ofrecerán toda la potencia necesaria para disfrutar de los últimos juegos del mercado con una tasa de frames superior a 60fps y a resolución 1080p.",
+        "imagen":"https://img.pccomponentes.com/articles/1063/10636251/1354-pccom-bronze-intel-core-i5-11400f-16gb-500gb-ssd-gtx1650-windows-11-home.jpg",
+        "idCliente": "23328597k",
+        "idCategoria": "78lp",
+        "idProveedor": "18bn"
+    }
+]
