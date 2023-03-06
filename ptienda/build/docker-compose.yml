@@ -1,17 +1,3 @@
-# version: '3' 
-# services:
-#   web: 
-#     build: 
-#       context: ${DIR_DFILES}
-#       dockerfile: ./dockerfile
-#     env_file: 
-#       - ./.env
-#     ports: 
-#       - ${PUERTO}:80
-#     # volumes: 
-#     #   - ../app_next:/usr/share/nginx/html
-
-
 version: "3.8"
 services:
   dbapinest:
@@ -35,7 +21,8 @@ services:
     image: ub-base-apitienda
     restart: always
     build:
-      context: ${DIR_DFILES}/api-tienda/
+      # context: ${DIR_DFILES}/api-tienda/
+      context: ${DIR_DFILES}/build
       dockerfile: ./Dockerfile
       args:
         - USUARIO=${USUARIO}
