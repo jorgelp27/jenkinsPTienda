@@ -52,3 +52,29 @@ networks:
           driver: default
           config: 
               - subnet: 172.140.11.0/24
+
+
+# version: '3'
+
+# services:
+#   app:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     ports:
+#       - "3000:3000"
+#     environment:
+#       NODE_ENV: "production"
+#     restart: always
+#     command: yarn start
+#     depends_on:
+#       - nginx
+
+#   nginx:
+#     image: nginx:latest
+#     ports:
+#       - "80:80"
+#     volumes:
+#       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#     depends_on:
+#       - app

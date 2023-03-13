@@ -24,7 +24,7 @@ ENV URL_GIT=${URL_GIT}
 ENV W_PORT=${w_PORT}
 
 WORKDIR /app
-COPY ./api_nest/package.json .
+COPY ./api_nest/package.json . 
 COPY ./api_nest/yarn.lock .
 RUN yarn install --force
 
@@ -39,4 +39,33 @@ FROM nginx:1.19.0-alpine as deploy
 COPY --from=install /app/dist/main.js /usr/share/nginx/html/index.js
 COPY --from=install /app/dist/node_modules /usr/share/nginx/html/node_modules
 EXPOSE 80
+
 CMD [ "nginx", "-g", "daemon off;" ]
+
+
+
+
+# FROM node:14.17-alpine AS base
+
+# WORKDIR /app
+
+# COPY package.json yarn.lock ./
+# RUN yarn install --frozen-lockfile --production
+
+# FROM node:14.17-alpine AS build
+
+
+# WORKDIR /app
+
+# COPY . .
+
+# RUN yarn build
+
+# FROM node:14.17-alpine AS production
+
+# WORKDIR /app
+
+# COPY --from=base /app/node_modules ./node_modules
+# COPY --from=build /app/.next ./.next
+
+# CMD ["yarn", "start"]
