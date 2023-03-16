@@ -3,7 +3,7 @@
 FROM node:18-alpine
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /api
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
