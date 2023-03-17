@@ -4,9 +4,7 @@ echo "Desplegando la app de ptienda"
 # docker-compose -f /var/lib/jenkins/workspace/Proyectos/Job-pTienda/ptienda/build/docker-compose.yml build
 # docker-compose -f /var/lib/jenkins/workspace/Proyectos/Job-pTienda/ptienda/build/docker-compose.yml up -d
 
-source jenkins/web/proyectos/ptienda/api_nest/.env
-
-
+source /var/lib/jenkins/workspace/Proyectos/Job-pTienda/ptienda/api_nest/.env
 
 docker-compose -f /var/lib/jenkins/workspace/Proyectos/Job-pTienda/ptienda/api_nest/docker-compose.yml build --no-cache
 
