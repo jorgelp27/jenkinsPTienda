@@ -57,7 +57,7 @@ export const lightTheme = createTheme({
       styleOverrides:`
         body {
           background-image: url('/Fotohome.png');
-          background-size: cover;
+          background-size: auto;
         }
         `,
     },
