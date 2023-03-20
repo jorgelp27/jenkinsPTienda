@@ -97,39 +97,59 @@
 #       - ./nginx.conf:/etc/nginx/nginx.conf
 
 
+
+# version: "3.8"
+
+# services:
+#   db:
+#     container_name: bdpostgre
+#     image: postgres:14.3
+#     restart: always
+#     ports:
+#       - ${DB_PORT}:5432
+#     environment:
+#       POSTGRES_PASSWORD: ${DB_PASS}
+#       POSTGRES_DB: ${DB_NAME}
+#       POSTGRES_USER: ${DB_USER}
+#     volumes:
+#       - ./postgres:/var/lib/postgresql/data
+  
+#   api:
+#     container_name: apiTienda
+#     build:
+#       context: ./
+#       dockerfile: ./Dockerfile
+#       args:
+#         - PROYECTO=myproject
+#         - DB_HOST=db
+#         - DB_NAME=mydatabase
+#         - DB_USER=postgres
+#         - DB_PASS=mysecretpassword
+#         - DB_PORT=${DB_PORT}
+#         - NEST_PORT=${NEST_PORT}
+#     ports:
+#       - ${NEST_PORT}:80
+#     env_file:
+#       - .env
+#     volumes:
+#       - ./web:/var/www/html
+#       - ./logs:/var/logs
+
+
 version: "3.8"
 
 services:
-  api:
+  app:
+    container_name: app_nextjs
     build:
-      context: .
+      context: ./app_nest
       dockerfile: Dockerfile
-      args:
-        - DB_HOST=dbincidenciasnest
-        - DB_PORT=5432
-        - DB_USER=postgres
-        - DB_NAME=incidencias
-        - DB_PASS=postgres
-        - DB_SYNC=1
-        - NODE_ENV=production
-        - W_PORT=80
-    container_name: apiIncidenciasNest
     ports:
-      - "80:80"
-    depends_on:
-      - dbincidenciasnest
-    volumes:
-      - ./web:/var/www/html
-      - ./logs:/var/logs
-
-  dbincidenciasnest:
-    container_name: bdIncidenciasNest
-    image: postgres:14.3
+      - 3000:3000
     restart: always
-    environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: incidencias
-      POSTGRES_USER: postgres
-    volumes:
-      - ./postgres:/var/lib/postgresql/data
+
+
+
+
+
 
